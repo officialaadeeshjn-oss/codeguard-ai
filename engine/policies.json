@@ -1,0 +1,40 @@
+{
+  "policies": [
+    {
+      "id": "SEC-001",
+      "name": "Hardcoded Secrets",
+      "description": "Block hardcoded passwords, API keys and tokens",
+      "decision": "BLOCK"
+    },
+    {
+      "id": "AUTH-001",
+      "name": "Authentication Bypass",
+      "description": "Block changes that bypass authentication or authorization",
+      "decision": "BLOCK"
+    },
+    {
+      "id": "AUTH-002",
+      "name": "Plaintext Reset Token",
+      "description": "Block storing password-reset tokens in plaintext",
+      "decision": "BLOCK"
+    },
+    {
+      "id": "DATA-001",
+      "name": "Destructive Database Action",
+      "description": "Block destructive database operations",
+      "decision": "BLOCK"
+    },
+    {
+      "id": "GIT-001",
+      "name": "Protected Branch Force Push",
+      "description": "Block force-pushing to protected branches",
+      "decision": "BLOCK"
+    },
+    {
+      "id": "DEPLOY-001",
+      "name": "Production Deployment",
+      "description": "Require human approval before production deployment",
+      "decision": "APPROVAL_REQUIRED"
+    }
+  ]
+}
